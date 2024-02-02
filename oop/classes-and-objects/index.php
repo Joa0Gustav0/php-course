@@ -13,12 +13,20 @@ class User {
   }
 
   #method 🕓
-  public function getData() {
-    echo "username: {$this->username}";
-    echo "<br/>";
-    echo "userID: {$this->userID}";
+  public function getData(string $target) {
+    switch($target) {
+      case "username":
+        echo $this->username;
+        break;
+      case "userID":
+        echo $this->userID;
+        break;
+    }
+
+    return $this;
   }
 }
 
-$newUser = new User("Paulo", 1234);
-$newUser->getData();
+$newUser = new User("Gabriel", 1234);
+#Method Chaining
+$newUser->getData("username")->getData("userID");

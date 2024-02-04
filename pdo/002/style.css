@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body,
+html {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  max-width: 275px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+form > label {
+  display: flex;
+  font-size: 1.125em;
+  flex-direction: column;
+}
+form > label > input {
+  border: 0;
+  outline: none;
+  padding: 2.5px 5px;
+  border-bottom: 1px solid black;
+}
+form > input {
+  border: 0;
+  outline: none;
+  padding: 10px;
+  font-size: 1em;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: yellowgreen;
+}
+
+form > input:hover {
+  cursor: pointer;
+  background-color: rgb(126, 168, 40);
+}
+
+.users-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 15px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.user-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+  width: 100%;
+  padding: 15px;
+  max-width: 500px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.user-container__sub-headline {
+  color: #636363;
+  margin-bottom: 5px;
+}
+.user-container__greeting-text {
+  font-size: 1.25em;
+}
+.user-container__information-field > span {
+  font-weight: 600;
+}
